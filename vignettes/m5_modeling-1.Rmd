@@ -32,6 +32,7 @@ Dalam studi kasus ini kita akan melakukan pemodelan dan prediksi untuk nilai uji
 ```{r}
 un_smp <- vroom(here("data-raw", "un_smp.csv"))
 library(dplyr)
+library(dplyr)
 glimpse(un_smp)
 ```
 
@@ -127,7 +128,6 @@ un_smp_training <- un_smp_recipe %>%
   prep() %>% 
   bake(training(un_smp_split))
 glimpse(un_smp_training)
-
 
 un_smp_testing <- un_smp_recipe %>% 
   prep() %>% 
