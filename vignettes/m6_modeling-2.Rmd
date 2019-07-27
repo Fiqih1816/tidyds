@@ -101,7 +101,7 @@ sherlock_tfidf %>%
     subtitle = "Subcerita 'ADVENTURE IV. THE BOSCOMBE VALLEY MYSTERY'"
   ) +
   theme_light() + 
-  facet_wrap(~story)
+  facet_wrap(~story, scales = "free")
 
 ```
 
